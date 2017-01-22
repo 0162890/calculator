@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-n4-CZp" userLabel="First Text Field">
+                                <rect key="frame" x="40.5" y="103" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="C2a-cT-61t"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ntp-bO-Dn4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iyt-YS-SEI" userLabel="Second Text Field">
+                                <rect key="frame" x="212.5" y="103" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cYH-u7-bQV"/>
+                                    <constraint firstAttribute="width" constant="130" id="hwb-bC-9UG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yx-1P-a8V" userLabel="First AC">
+                                <rect key="frame" x="90.5" y="64" width="30" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="AC">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="allClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dd-KS-nvT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bv-BV-ioy" userLabel="Second AC">
+                                <rect key="frame" x="260" y="64" width="35" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="AC ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="allClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wi-ch-lbU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmR-p7-zi7" userLabel="Plus">
+                                <rect key="frame" x="60.5" y="153" width="30" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ad8-Hr-AIi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7M-uY-G8A" userLabel="Minus">
+                                <rect key="frame" x="120.5" y="153" width="30" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PEj-7K-u33"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIG-8Q-ckw" userLabel="Division">
+                                <rect key="frame" x="292.5" y="153" width="30" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lex-GK-tDq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xti-Tq-Uqe" userLabel="Multiple">
+                                <rect key="frame" x="232.5" y="161" width="30" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="*">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAN-e7-YkH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8P-iI-JHh">
+                                <rect key="frame" x="159" y="226" width="57.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2bv-BV-ioy" firstAttribute="centerX" secondItem="Iyt-YS-SEI" secondAttribute="centerX" id="0UZ-aU-eWE"/>
+                            <constraint firstItem="d8P-iI-JHh" firstAttribute="top" secondItem="k7M-uY-G8A" secondAttribute="bottom" constant="20" id="7Hu-gt-H0n"/>
+                            <constraint firstItem="d8P-iI-JHh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Awc-wi-ljM"/>
+                            <constraint firstItem="k7M-uY-G8A" firstAttribute="centerX" secondItem="4Um-n4-CZp" secondAttribute="centerX" constant="30" id="Krs-aa-AgO"/>
+                            <constraint firstItem="2bv-BV-ioy" firstAttribute="bottom" secondItem="Iyt-YS-SEI" secondAttribute="top" id="Pl0-66-u0t"/>
+                            <constraint firstItem="WIG-8Q-ckw" firstAttribute="centerX" secondItem="Iyt-YS-SEI" secondAttribute="centerX" constant="30" id="REc-0S-8lK"/>
+                            <constraint firstItem="4yx-1P-a8V" firstAttribute="centerX" secondItem="4Um-n4-CZp" secondAttribute="centerX" id="Rnx-ut-fWr"/>
+                            <constraint firstItem="xti-Tq-Uqe" firstAttribute="centerX" secondItem="Iyt-YS-SEI" secondAttribute="centerX" constant="-30" id="TbS-pp-NgL"/>
+                            <constraint firstItem="WIG-8Q-ckw" firstAttribute="top" secondItem="Iyt-YS-SEI" secondAttribute="bottom" id="UIC-3d-pkV"/>
+                            <constraint firstItem="zmR-p7-zi7" firstAttribute="centerX" secondItem="4Um-n4-CZp" secondAttribute="centerX" constant="-30" id="UhT-K5-3rx"/>
+                            <constraint firstItem="xti-Tq-Uqe" firstAttribute="top" secondItem="Iyt-YS-SEI" secondAttribute="bottom" constant="8" id="Y0D-Ji-rRa"/>
+                            <constraint firstItem="4Um-n4-CZp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="YvR-wF-fIf"/>
+                            <constraint firstItem="Iyt-YS-SEI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="bcE-id-hTq"/>
+                            <constraint firstItem="zmR-p7-zi7" firstAttribute="top" secondItem="4Um-n4-CZp" secondAttribute="bottom" id="ffM-Uh-5bW"/>
+                            <constraint firstItem="k7M-uY-G8A" firstAttribute="top" secondItem="4Um-n4-CZp" secondAttribute="bottom" id="g7F-v8-Bjy"/>
+                            <constraint firstItem="4Um-n4-CZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-82" id="hR7-rg-CvR"/>
+                            <constraint firstItem="4yx-1P-a8V" firstAttribute="bottom" secondItem="4Um-n4-CZp" secondAttribute="top" id="iFq-Sb-2tu"/>
+                            <constraint firstItem="Iyt-YS-SEI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="piH-Jh-393"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ansLabel" destination="d8P-iI-JHh" id="042-i3-cI1"/>
+                        <outlet property="divisionButton" destination="WIG-8Q-ckw" id="ZW6-Eq-mqL"/>
+                        <outlet property="firstAC" destination="4yx-1P-a8V" id="z14-fc-u4J"/>
+                        <outlet property="firstTextField" destination="4Um-n4-CZp" id="Cw4-aS-3jP"/>
+                        <outlet property="minusButton" destination="k7M-uY-G8A" id="fmR-AT-HY1"/>
+                        <outlet property="multipleButton" destination="xti-Tq-Uqe" id="lMi-f2-ker"/>
+                        <outlet property="plusButton" destination="zmR-p7-zi7" id="P6w-HB-wJu"/>
+                        <outlet property="secondAC" destination="2bv-BV-ioy" id="NfS-MV-H8R"/>
+                        <outlet property="secondTextField" destination="Iyt-YS-SEI" id="Zif-jd-PYL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>
